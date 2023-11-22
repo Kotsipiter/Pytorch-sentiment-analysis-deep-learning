@@ -10,7 +10,7 @@ text = nltk.data.load('nltk:tokenizers/punkt/english.pickle')
 filename = "F:\Program Files (x86)\Pytorch sentiment analysis deep learning\sample text.txt"
  
  
-def remove_punc(string):
+def remove_punc(string):#removes punctuation, replaces ?,! with. and converts to lower case
     punc = '''()-[]{}:'"\,<>/@#$%^&*_~'''
     punc_to_be_replaced = '?!'
     for ele in string:  
